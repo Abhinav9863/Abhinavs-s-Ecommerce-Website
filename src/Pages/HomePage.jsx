@@ -2,6 +2,12 @@ import { products } from "../../starting-code/data/products";
 import { Header } from "../components/Header";
 import "./Homepage.css";
 export function Homepage() {
+  fetch("http://localhost:3000/api/products").then((response) =>{
+      response.json().then((data) => {
+        console.log(data)
+      })
+  })
+
   return (
     <>
       <title>Abhinav's Ecommerce Website</title>
@@ -68,3 +74,5 @@ export function Homepage() {
     </>
   );
 }
+
+
