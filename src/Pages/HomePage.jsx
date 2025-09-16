@@ -1,4 +1,4 @@
-import { products } from "../../data/products";
+import { products } from "../../starting-code/data/products";
 import { Header } from "../components/Header";
 import "./Homepage.css";
 export function Homepage() {
@@ -16,7 +16,7 @@ export function Homepage() {
                     className="product-image"
                     src= {product.image}
                   />
-                </div>
+                </div>    
 
                 <div className="product-name limit-text-to-2-lines">
                   {product.name}
