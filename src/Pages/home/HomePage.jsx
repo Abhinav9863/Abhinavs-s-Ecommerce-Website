@@ -5,7 +5,7 @@ import "./Homepage.css";
 import { ProductsGrid } from './ProductsGrid';
 
 
-export function Homepage({cart}) {
+export function Homepage({cart , loadCart}) {
 
   const [products , setProducts] = useState([]);
  
@@ -28,7 +28,7 @@ export function Homepage({cart}) {
       <title>Abhinav's Ecommerce Website</title>
       <Header  cart= {cart}/>
       <div className="home-page">
-      <ProductsGrid products = {products}/>
+      <ProductsGrid products = {products} loadCart = {loadCart}/>
       </div>
     </>
   );
